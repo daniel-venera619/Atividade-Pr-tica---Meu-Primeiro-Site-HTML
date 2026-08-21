@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Bella Femme</title>
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Bella Femme - Moda Íntima</h1>
+        <p>Delicadeza para todos os momentos.</p>
+        <!-- LOGO -->
+        <img class="logo"
+            src="../Assets/ChatGPT Image 18 de ago. de 2026, 21_06_46.png"
+            alt="Logo da loja Bella Femme">
+         <!-- MENU DE NAVEGAÇÃO -->
+        <nav>
+            <ul>
+                <li><a href="../Pages/index.html">Início</a></li>
+                <li><a href="../Pages/produto.html">Produtos</a></li>
+                <li><a href="../Pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <section class="contato">
+            <h2>Entre em contato</h2>
+            <p>
+                Preencha o formulario abaixo para tirar duvidas
+                ou demonstre interesse em nossos produtos.
+            </p>
+
+            <!-- FORMULÁRIO -->
+            <form action="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text"
+                       id="nome"
+                       name="nome"
+                       placeholder="Digite seu nome"
+                       required 
+                >
+                <!-- E-MAIL -->
+                <label for="email">E-mail</label> 
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Digite seu e-mail"
+                       required                      
+                >
+
+                <!-- TELEFONE -->
+                 <label for="telefone">Telefone</label>
+                 <input type="tel"
+                        id="telefone"
+                        name="telefone"
+                        placeholder="(47) 99999-9999"
+                        required
+                 >
+
+                <!-- PRODUTO -->
+                <label for="produto">Produto de interesse:</label>
+                <input
+                    type="text"
+                    id="produto"
+                    name="produto"
+                    placeholder="Digite o produto desejado"
+                    required
+                >
+
+                <!-- MENSAGEM -->
+                <label for="mensagem">Mensagem:</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    placeholder="Digite sua mensagem"
+                    required
+                ></textarea>
+                
+                <!-- BOTÃO -->
+                <button type="submit">
+                    Enviar mensagem
+                </button>     
+
+
+            </form> 
+
+        </section>
+    </main>
+
+</body>
+</html>
