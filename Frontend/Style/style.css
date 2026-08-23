@@ -1,25 +1,284 @@
-/* CONFIGURAÇÂO GERAL */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* =========================================================
+   CONFIGURAÇÃO GERAL
+========================================================= */
+
+* {
+
+    margin: 0; /* Remove margens padrão */
+
+    padding: 0; /* Remove espaçamento padrão */
+
+    box-sizing: border-box; /* Inclui padding e borda no cálculo */
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff5f8;
-    color: #333;
+body {
+
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão */
+
+    background-color: #fff0f6; /* Define o fundo rosa suave */
+
+    color: #2c2c2c; /* Define a cor padrão dos textos */
 }
 
-/*CABEÇALHO*/
-header{
-    background-color: #d81b60;
-    color: white;
-    text-align: center;
-    padding: 20px;
+
+/* =========================================================
+   CABEÇALHO
+========================================================= */
+
+header {
+
+    background: linear-gradient(135deg, #ff007f, #d81b60); /* Cria um degradê rosa */
+
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjOCvAXBwdhGIoz825GI728D5ygtWocbPq_9K3huc9jg&s=10); /* Define uma imagem de fundo */
+
+    color: rgb(216, 10, 192); /* Define a cor do texto */
+
+    text-align: center; /* Centraliza o conteúdo */
+
+    padding: 10px 10px; /* Define o espaçamento interno */
+
+    font-family: "Dancing Script", cursive; /* Define a fonte do cabeçalho */
+
+    position: relative; /* Permite posicionamento relativo */
+
+    overflow: hidden; /* Esconde conteúdo que ultrapassar o cabeçalho */
 }
 
-header h1{
-    font-size: 32px;
-    margin-bottom: 8px;
+header h1 {
+
+    font-size: 10vh; /* Define o tamanho do título */
+
+    margin-bottom: 10px; /* Cria espaço abaixo do título */
+
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4); /* Adiciona sombra ao título */
+}
+
+header p {
+
+    font-size: 5vh; /* Define o tamanho do parágrafo */
+
+    margin-bottom: 50px; /* Cria espaço abaixo do parágrafo */
+
+    color: #20020e; /* Define a cor do texto */
+}
+
+.logo {
+
+    width: 50vh; /* Define a largura da logo */
+
+    margin: auto; /* Centraliza a logo */
+
+    display: block; /* Faz a imagem ocupar sua própria linha */
+
+    border-radius: 75%; /* Arredonda a logo */
+
+    box-shadow: 0 0 20px rgba(255,0,127,0.6); /* Adiciona brilho rosa */
+}
+
+
+/* =========================================================
+   MENU DE NAVEGAÇÃO
+========================================================= */
+
+nav ul {
+
+    list-style: none; /* Remove as bolinhas da lista */
+
+    display: flex; /* Coloca os itens lado a lado */
+
+    justify-content: center; /* Centraliza os itens */
+
+    gap: 25px; /* Cria espaço entre os itens */
+
+    margin-top: 20px; /* Cria espaço acima do menu */
+}
+
+nav a {
+
+    color: #e70909; /* Define a cor dos links */
+
+    text-decoration: none; /* Remove o sublinhado */
+
+    font-weight: bold; /* Deixa os links em negrito */
+
+    font-size: 50px; /* Define o tamanho dos links */
+
+    padding: 8px 15px; /* Define o espaço interno */
+
+    border-radius: 6px; /* Arredonda os cantos */
+
+    transition: 0.3s; /* Cria uma transição suave */
+}
+
+nav a:hover {
+
+    background-color: #ff4da6; /* Muda o fundo quando passa o mouse */
+
+    color: #fff0f6; /* Muda a cor do texto */
+
+    box-shadow: 0 0 12px rgba(255,0,127,0.7); /* Adiciona brilho */
+}
+
+
+/* =========================================================
+   SEÇÃO DE PRODUTOS
+========================================================= */
+
+.produto {
+
+    background: linear-gradient(135deg, #ff4da6, #d81b60); /* Cria um degradê rosa */
+
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO4vhmVnVPPAuZ5HdVqXpwByKw-P7oAlKp63mq6M3d4A&s=10); /* Define imagem de fundo */
+
+    padding: 40px; /* Define espaço interno */
+
+    text-align: center; /* Centraliza o conteúdo */
+
+    color: #fff; /* Define o texto como branco */
+}
+
+.produto h2 {
+
+    font-size: 2.5em; /* Define o tamanho do título */
+
+    margin-bottom: 10px; /* Cria espaço abaixo do título */
+
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4); /* Adiciona sombra */
+}
+
+.produto p {
+
+    font-size: 1.2em; /* Define o tamanho do texto */
+
+    margin-bottom: 30px; /* Cria espaço abaixo do parágrafo */
+
+    color: #ffe6f0; /* Define a cor rosa clara */
+}
+
+
+/* =========================================================
+   CARD DE PRODUTO
+========================================================= */
+
+.card-produto {
+
+    background-color: #fff; /* Define o fundo branco */
+
+    border-radius: 15px; /* Arredonda os cantos */
+
+    padding: 20px; /* Define espaço interno */
+
+    margin: 15px; /* Define espaço externo */
+
+    text-align: center; /* Centraliza o conteúdo */
+
+    border: 2px solid #ff4da6; /* Cria borda rosa */
+
+    box-shadow: 0 6px 18px rgba(216, 27, 96, 0.4); /* Adiciona sombra */
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Cria animação suave */
+
+    display: inline-block; /* Permite colocar os cards lado a lado */
+
+    width: 250px; /* Define a largura do card */
+}
+
+.card-produto:hover {
+
+    transform: translateY(-8px); /* Move o card para cima ao passar o mouse */
+
+    box-shadow: 0 10px 25px rgba(255,0,127,0.6); /* Aumenta a sombra */
+}
+
+.card-produto img {
+
+    width: 100%; /* Ocupa toda a largura do card */
+
+    height: 280px; /* Define altura fixa para as imagens */
+
+    object-fit: cover; /* Preenche o espaço cortando o excesso */
+
+    border-radius: 12px; /* Arredonda os cantos da imagem */
+
+    margin-bottom: 15px; /* Cria espaço abaixo da imagem */
+
+    border: 3px solid #ff4da6; /* Define borda rosa uniforme */
+
+    background-color: #fff; /* Define fundo branco */
+
+    box-shadow: 0 4px 12px rgba(255,0,127,0.4); /* Adiciona sombra */
+}
+
+
+/* =========================================================
+   ÚLTIMA IMAGEM - AJUSTE ESPECÍFICO
+========================================================= */
+
+.card-produto:last-child img {
+
+    object-fit: contain; /* Mostra a imagem inteira sem cortar */
+
+    background-color: #fff; /* Define fundo branco */
+
+    border: 3px solid #ff4da6; /* Mantém a mesma borda das outras imagens */
+}
+
+.card-produto h3 {
+
+    color: #d81b60; /* Define a cor do título */
+
+    margin-bottom: 10px; /* Cria espaço abaixo do título */
+
+    font-size: 1.3em; /* Define o tamanho do título */
+}
+
+.card-produto a {
+
+    display: inline-block; /* Permite controlar tamanho e espaçamento */
+
+    background-color: #ff007f; /* Define o fundo rosa do botão */
+
+    color: white; /* Define a cor branca do texto */
+
+    text-decoration: none; /* Remove o sublinhado */
+
+    padding: 10px 18px; /* Define espaço interno do botão */
+
+    border-radius: 8px; /* Arredonda os cantos */
+
+    font-weight: bold; /* Deixa o texto em negrito */
+
+    transition: 0.3s; /* Cria uma transição suave */
+}
+
+.card-produto a:hover {
+
+    background-color: #d81b60; /* Escurece o botão ao passar o mouse */
+
+    box-shadow: 0 0 12px rgba(255,0,127,0.7); /* Adiciona brilho */
+}
+
+
+/* =========================================================
+   RODAPÉ
+========================================================= */
+
+footer {
+
+    background-color: #d81b60; /* Define o fundo do rodapé */
+
+    color: #fff; /* Define a cor branca do texto */
+
+    text-align: center; /* Centraliza o conteúdo */
+
+    padding: 20px; /* Define espaço interno */
+
+    margin-top: 40px; /* Cria espaço acima do rodapé */
+}
+
+footer p {
+
+    margin: 5px 0; /* Define margem acima e abaixo */
+
+    font-size: 0.95em; /* Define o tamanho do texto */
 }
