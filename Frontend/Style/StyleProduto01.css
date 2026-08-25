@@ -101,160 +101,76 @@ nav a:hover {
     color: #fff0f6; /* Muda a cor do texto */
     box-shadow: 0 0 12px rgba(255, 0, 127, 0.7); /* Adiciona brilho */
 }
-
-
 /* =========================================================
-   CONTEÚDO PRINCIPAL
+   PRODUTO
 ========================================================= */
 
 main {
-    width: 100%; /* Ocupa toda a largura */
-    padding: 50px 20px; /* Espaçamento interno */
-    display: flex; /* Ativa o Flexbox */
-    justify-content: center; /* Centraliza a seção */
-}
 
-
-/* =========================================================
-   SEÇÃO DE CONTATO
-========================================================= */
-
-.contato {
-    position: relative; /* Permite pseudo-elemento */
-    width: 100%; /* Ocupa a largura disponível */
-    max-width: 700px; /* Limita a largura da seção */
-    background: linear-gradient(135deg, #ff4da6, #d81b60); /* Fundo rosa */
-    padding: 40px; /* Espaço interno */
-    border-radius: 20px; /* Cantos arredondados */
+    width: 90%; /* Define a largura do conteúdo */
+    max-width: 800px; /* Define uma largura máxima */
+    margin: 50px auto; /* Centraliza o conteúdo */
+    padding: 40px; /* Cria espaço interno */
+    background-color: rgba(233, 137, 228, 0.95); /* Fundo branco */
+    border-radius: 20px; /* Arredonda os cantos */
     text-align: center; /* Centraliza o conteúdo */
-    color: #fff; /* Texto branco */
-    overflow: hidden; /* Esconde excesso */
-    box-shadow: 0 10px 30px rgba(216, 27, 96, 0.35); /* Sombra */
+    box-shadow: 0 10px 30px rgba(216, 27, 96, 0.3); /* Adiciona sombra */
     
+
 }
 
 
 /* =========================================================
-   TÍTULO DA SEÇÃO
+   IMAGEM DO PRODUTO
 ========================================================= */
 
-.contato h2 {
-    font-family: "Dancing Script", cursive; /* Fonte decorativa */
-    font-size: 50px; /* Tamanho do título */
-    margin-bottom: 15px; /* Espaço abaixo */
+main img {
+    width: 100%; /* Ocupa a largura disponível */
+    max-width: 450px; /* Limita o tamanho da imagem */
+    height: 450px; /* Define uma altura padrão */
+    object-fit: cover; /* Ajusta a imagem sem deformar */
+    border-radius: 15px; /* Arredonda os cantos */
+    display: block; /* Coloca a imagem em sua própria linha */
+    margin: 0 auto 30px; /* Centraliza e cria espaço abaixo */
+    box-shadow: 0 5px 20px rgba(216, 27, 96, 0.3); /* Cria sombra na imagem */
+
 }
 
 
 /* =========================================================
-   TEXTO DA SEÇÃO
+   NOME DO PRODUTO
 ========================================================= */
 
-.contato p {
-    font-size: 18px; /* Tamanho do texto */
-    line-height: 1.6; /* Espaçamento entre linhas */
-    margin-bottom: 30px; /* Espaço abaixo */
+main h3 {
+    font-family: "Dancing Script", cursive; /* Define a fonte decorativa */
+    font-size: 50px; /* Define o tamanho do título */
+    color: #d81b60; /* Define a cor rosa */
+    margin-bottom: 15px; /* Cria espaço abaixo */
 }
 
 
 /* =========================================================
-   FORMULÁRIO
+   DESCRIÇÃO DO PRODUTO
 ========================================================= */
 
-form {
-    display: flex; /* Ativa Flexbox */
-    flex-direction: column; /* Coloca os elementos um abaixo do outro */
-    text-align: left; /* Alinha os textos à esquerda */
-    gap: 8px; /* Espaçamento entre os elementos */
+main p {
+    font-size: 20px; /* Define o tamanho do texto */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
+    color: #630101; /* Define a cor do texto */
+    margin-bottom: 20px; /* Cria espaço abaixo */
 }
 
 
 /* =========================================================
-   LABEL
+   PREÇO
 ========================================================= */
 
-form label {
-    font-size: 17px; /* Tamanho do texto */
-    font-weight: bold; /* Deixa o texto em negrito */
-    margin-top: 10px; /* Espaço acima */
-}
+main .preco {
+    font-size: 32px; /* Define o tamanho do preço */
+    font-weight: bold; /* Deixa o preço em negrito */
+    color: #ff007f; /* Define a cor rosa */
+    margin-top: 20px; /* Cria espaço acima */
 
-
-/* =========================================================
-   CAMPOS INPUT
-========================================================= */
-
-form input {
-    width: 100%; /* Ocupa toda a largura */
-    padding: 14px; /* Espaço interno */
-    border: 2px solid #ffffff; /* Borda branca */
-    border-radius: 8px; /* Cantos arredondados */
-    font-size: 16px; /* Tamanho da fonte */
-    font-family: Arial, Helvetica, sans-serif; /* Fonte */
-    outline: none; /* Remove contorno padrão */
-    background-color: #ffffff; /* Fundo branco */
-    color: #333333; /* Cor do texto */
-    transition: 0.3s; /* Transição suave */
-}
-
-
-/* =========================================================
-   TEXTAREA
-========================================================= */
-
-form textarea {
-    width: 100%; /* Ocupa toda a largura */
-    min-height: 150px; /* Define altura mínima */
-    padding: 14px; /* Espaço interno */
-    border: 2px solid #ffffff; /* Borda branca */
-    border-radius: 8px; /* Cantos arredondados */
-    font-size: 16px; /* Tamanho da fonte */
-    font-family: Arial, Helvetica, sans-serif; /* Fonte */
-    outline: none; /* Remove contorno */
-    resize: vertical; /* Permite aumentar verticalmente */
-    background-color: #ffffff; /* Fundo branco */
-    color: #333333; /* Cor do texto */
-    transition: 0.3s; /* Transição suave */
-}
-
-
-/* =========================================================
-   EFEITO AO CLICAR NOS CAMPOS
-========================================================= */
-
-form input:focus,
-form textarea:focus {
-    border-color: #ff007f; /* Muda a cor da borda */
-    box-shadow: 0 0 10px rgba(255, 0, 127, 0.5); /* Adiciona brilho */
-}
-
-
-/* =========================================================
-   BOTÃO
-========================================================= */
-
-form button {
-    margin-top: 20px; /* Espaço acima */
-    padding: 15px; /* Espaço interno */
-    border: none; /* Remove a borda */
-    border-radius: 8px; /* Arredonda os cantos */
-    background-color: #ffffff; /* Fundo branco */
-    color: #d81b60; /* Texto rosa */
-    font-size: 18px; /* Tamanho da fonte */
-    font-weight: bold; /* Negrito */
-    cursor: pointer; /* Mostra a mãozinha */
-    transition: 0.3s; /* Transição suave */
-}
-
-
-/* =========================================================
-   EFEITO DO BOTÃO
-========================================================= */
-
-form button:hover {
-    background-color: #ff007f; /* Fundo rosa */
-    color: #ffffff; /* Texto branco */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Brilho */
-    transform: scale(1.02); /* Aumenta levemente o botão */
 }
 
 
@@ -264,23 +180,23 @@ form button:hover {
 
 @media (max-width: 768px) {
     header h1 {
-        font-size: 7vh;
+        font-size: 7vh; /* Diminui o título */
     }
-
     header p {
-        font-size: 3.5vh;
+        font-size: 3.5vh; /* Diminui o slogan */
     }
-    .logo {
-        width: 35vh;
+.logo {
+        width: 35vh; /* Diminui a logo */
     }
     nav a {
-        font-size: 30px;
+        font-size: 30px; /* Diminui o menu */
     }
-    .contato {
-        padding: 30px;
+    main {
+        width: 95%; /* Aumenta o espaço disponível */
+        padding: 25px; /* Diminui o espaçamento */
     }
-    .contato h2 {
-        font-size: 42px;
+    main img {
+        height: 350px; /* Diminui a imagem */
     }
 }
 
@@ -290,34 +206,88 @@ form button:hover {
 ========================================================= */
 
 @media (max-width: 480px) {
-
     header h1 {
-        font-size: 40px;
+        font-size: 40px; /* Diminui o título */
     }
     header p {
-        font-size: 25px;
-        margin-bottom: 30px;
+        font-size: 25px; /* Diminui o slogan */
+        margin-bottom: 30px; /* Diminui o espaço */
     }
     .logo {
-        width: 200px;
+        width: 200px; /* Diminui a logo */
     }
     nav ul {
-        gap: 10px;
+        gap: 10px; /* Diminui o espaço do menu */
     }
     nav a {
-        font-size: 22px;
-        padding: 8px 12px;
+        font-size: 22px; /* Diminui o texto do menu */
+        padding: 8px 12px; /* Diminui o espaço interno */
     }
     main {
-        padding: 30px 10px;
+        width: 95%; /* Ocupa quase toda a tela */
+        padding: 20px; /* Diminui o espaçamento */
+        margin: 30px auto; /* Diminui a margem */
     }
-    .contato {
-        padding: 25px 20px;
+    main img {
+        height: 280px; /* Diminui a imagem */
     }
-    .contato h2 {
-        font-size: 38px;
+    main h3 {
+        font-size: 38px; /* Diminui o nome do produto */
     }
-    .contato p {
-        font-size: 16px;
+    main p {
+        font-size: 17px; /* Diminui a descrição */
     }
+    main .preco {
+        font-size: 28px; /* Diminui o preço */
+    }
+
+}
+
+/* =========================================================
+   BOTÃO CARRINHO
+========================================================= */
+
+button:first-child {
+    background: linear-gradient(135deg, #ff4da6, #d81b60); /* Define o fundo rosa em degradê */
+    color: white; /* Define a cor do texto como branco */
+    border: none; /* Remove a borda */
+    padding: 12px 20px; /* Define o espaço interno */
+    border-radius: 8px; /* Arredonda os cantos */
+    font-size: 16px; /* Define o tamanho do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    cursor: pointer; /* Mostra a mãozinha */
+    transition: 0.3s; /* Cria uma transição suave */
+    margin: 5px; /* Cria espaço ao redor do botão */
+    box-shadow: 0 4px 10px rgba(216, 27, 96, 0.3); /* Adiciona sombra rosa */
+}
+
+
+/* =========================================================
+   BOTÃO COMPRAR
+========================================================= */
+
+button:last-child {
+    background: linear-gradient(135deg, #ff007f, #d81b60); /* Define o fundo rosa em degradê */
+    color: white; /* Define a cor do texto como branco */
+    border: none; /* Remove a borda */
+    padding: 12px 20px; /* Define o espaço interno */
+    border-radius: 8px; /* Arredonda os cantos */
+    font-size: 16px; /* Define o tamanho do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    cursor: pointer; /* Mostra a mãozinha */
+    transition: 0.3s; /* Cria uma transição suave */
+    margin: 5px; /* Cria espaço ao redor do botão */
+    box-shadow: 0 4px 10px rgba(255, 0, 127, 0.3); /* Adiciona sombra rosa */
+}
+
+
+/* =========================================================
+   EFEITO AO PASSAR O MOUSE
+========================================================= */
+
+button:hover {
+    background: linear-gradient(135deg, #d81b60, #ff007f); /* Inverte o degradê */
+    opacity: 0.9; /* Deixa o botão levemente transparente */
+    transform: scale(1.03); /* Aumenta levemente o botão */
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.6); /* Adiciona brilho rosa */
 }
