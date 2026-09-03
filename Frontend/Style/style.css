@@ -226,6 +226,35 @@ footer p {
     box-shadow: 0 0 20px rgba(255, 0, 127, 0.8); /* Cria brilho rosa */
 }
 
+/* =========================================================
+   CONTADOR DO CARRINHO
+========================================================= */
+
+#contador-carrinho {
+    position: absolute; /* Permite posicionar o número sobre o carrinho */
+    top: -5px; /* Posiciona o contador acima */
+    right: -5px; /* Posiciona o contador à direita */
+    
+    background-color: #ffffff; /* Fundo branco */
+    color: #d81b60; /* Cor do número */
+    
+    width: 25px; /* Largura do contador */
+    height: 25px; /* Altura do contador */
+    
+    border-radius: 50%; /* Deixa o contador redondo */
+    
+    display: flex; /* Permite centralizar o número */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    
+    font-size: 14px; /* Tamanho do número */
+    font-weight: bold; /* Deixa o número em negrito */
+    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    
+    z-index: 1001; /* Mantém o contador acima do carrinho */
+}
+
 
 /* Fundo escuro atrás da janela */
 .modal {
@@ -298,4 +327,28 @@ footer p {
 #btn-confirmar:hover,
 #btn-cancelar:hover {
     transform: scale(1.05);
+}
+
+/* =========================================================
+   MENSAGEM DE SUCESSO
+========================================================= */
+
+#mensagem-sucesso {
+    display: none; /* Esconde a mensagem inicialmente */
+
+    margin-top: 20px; /* Cria espaço acima */
+
+    padding: 15px; /* Espaçamento interno */
+
+    background-color: #d4edda; /* Fundo verde claro */
+
+    color: #155724; /* Cor do texto */
+
+    border: 1px solid #c3e6cb; /* Borda verde */
+
+    border-radius: 10px; /* Arredonda os cantos */
+
+    font-weight: bold; /* Deixa o texto em negrito */
+
+    text-align: center; /* Centraliza o texto */
 }
