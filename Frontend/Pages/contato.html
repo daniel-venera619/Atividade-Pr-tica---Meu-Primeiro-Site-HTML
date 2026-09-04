@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Bella Femme</title>
-    <link rel="stylesheet" href="../Style/styleContato.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/contato.css">
+    <!-- Fonte Dancing Script -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+        rel="stylesheet"
+    >
 
+    <!-- JavaScript -->
+    <script src="../scripts/contato.js" defer></script>
+    <script src="../scripts/audio.js" defer></script>
 </head>
 
 <body>
@@ -17,54 +26,62 @@
         <h1>Bella Femme - Moda Íntima</h1>
         <p>Delicadeza para todos os momentos.</p>
         <!-- LOGO -->
-        <img class="logo"
-            src="../Assets/ChatGPT Image 18 de ago. de 2026, 21_06_46.png"
-            alt="Logo da loja Bella Femme">
-         <!-- MENU DE NAVEGAÇÃO -->
+        <img
+            class="logo"
+            src="../assets/ChatGPT Image 18 de ago. de 2026, 21_06_46.png"
+            alt="Logo da loja Bella Femme"
+        >
+        <!-- MENU DE NAVEGAÇÃO -->
         <nav>
             <ul>
-                <li><a href="../Pages/index.html">Início</a></li>
-                <li><a href="../Pages/contato.html">Contato</a></li>
+                <li>
+                    <a href="../pages/index.html">Início</a>
+                </li>
+                <li>
+                    <a href="../ages/contato.html">Contato</a>
+                </li>
             </ul>
         </nav>
     </header>
+
 
     <!-- CONTEÚDO PRINCIPAL -->
     <main>
         <section class="contato">
             <h2>Entre em contato</h2>
             <p>
-                Preencha o formulario abaixo para tirar duvidas
-                ou demonstre interesse em nossos produtos.
+                Preencha o formulário abaixo para tirar dúvidas
+                ou demonstrar interesse em nossos produtos.
             </p>
-
             <!-- FORMULÁRIO -->
-            <form id ="formulario">
+            <form id="formulario">
+                <!-- NOME -->
                 <label for="nome">Nome:</label>
-                <input type="text"
-                       id="nome"
-                       name="nome"
-                       placeholder="Digite seu nome"
-                       required 
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
                 >
                 <!-- E-MAIL -->
-                <label for="email">E-mail</label> 
-                <input type="email"
-                       id="email"
-                       name="email"
-                       placeholder="Digite seu e-mail"
-                       required                      
+                <label for="email">E-mail:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
                 >
-
                 <!-- TELEFONE -->
-                 <label for="telefone">Telefone</label>
-                 <input type="tel"
-                        id="telefone"
-                        name="telefone"
-                        placeholder="(47) 99999-9999"
-                        required
-                 >
-
+                <label for="telefone">Telefone:</label>
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(47) 99999-9999"
+                    required
+                >
                 <!-- PRODUTO -->
                 <label for="produto">Produto de interesse:</label>
                 <input
@@ -74,7 +91,6 @@
                     placeholder="Digite o produto desejado"
                     required
                 >
-
                 <!-- MENSAGEM -->
                 <label for="mensagem">Mensagem:</label>
                 <textarea
@@ -83,18 +99,21 @@
                     placeholder="Digite sua mensagem"
                     required
                 ></textarea>
-                
                 <!-- BOTÃO -->
                 <button type="submit">
                     Enviar mensagem
-                </button>     
-
-
-            </form> 
-
+                </button>
+            </form>
+            <!-- MENSAGEM DE SUCESSO -->
+            <p id="mensagem-sucesso"></p>
         </section>
     </main>
 
-</body>
-</html>
+    <audio id="meuAudio">
+         <source src="../assets/Ai, que delicia! Que demais! MEME DOWNLOAD.mp3" type="audio/mp3">
+    </audio>
 
+  
+</body>
+
+</html>

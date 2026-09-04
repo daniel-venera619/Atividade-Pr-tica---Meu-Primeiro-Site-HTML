@@ -5,23 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bella Femme - Moda Íntima</title>
-    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
     <script src="../scripts/script.js" defer></script>
+    <script src="../scripts/audio.js" defer></script>
+
+    
 </head>
 <div id="modal-confirmacao" class="modal">
     <div class="modal-conteudo">
-
-        <!-- <img src="../Assets/ChatGPT Image 18 de ago. de 2026, 21_06_46.png" alt="Bella Femme">
-
-        <h2>Ir para Contato?</h2>
-
-        <p>Você deseja realmente acessar a página de contato?</p> -->
-
+    
         <div class="botoes-modal">
             <button id="btn-confirmar">Sim, continuar</button>
             <button id="btn-cancelar">Cancelar</button>
@@ -39,27 +36,26 @@
 
         <!-- LOGO -->
         <img class="logo"
-            src="../Assets/ChatGPT Image 18 de ago. de 2026, 21_06_46.png"
+            src="../assets/ChatGPT Image 18 de ago. de 2026, 21_06_46.png"
             alt="Logo da loja Bella Femme">
 
         <!-- MENU DE NAVEGAÇÃO -->
         <nav>
             <ul>
-                <li><a href="../Pages/index.html">Início</a></li>
-                <li><a href="../Pages/contato.html">Contato</a></li>
+                <li><a href="../pages/index.html">Início</a></li>
+                <li><a href="../pages/contato.html">Contato</a></li>
             </ul>
         </nav>
-        <a class="fundoCarrinho" id="carrinho">
-
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 height="48px"
-                 viewBox="0 -960 960 960"
-                 width="48px"
-                 fill="#F3F3F3">
-
-                <path d="M236-102.21q-21-21.21-21-51T236.21-204q21.21-21 51-21T338-203.79q21 21.21 21 51T337.79-102q-21.21 21-51 21T236-102.21Zm400 0q-21-21-21-51T636.21-204q21-21 51-21T738-203.79q21 21.21 21 51T737.79-102q-21.21-21-51-21T636-102.21ZM235-741l110 228h288l125-228H235Zm-30-60h589.07q22.97 0 34.95 21 11.98 21-.02 42L694-495q-11 19-28.56 30.5T627-453H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Zm140 288h288-288Z"/>
-
-            </svg>
+            <button class="fundoCarrinho" id="carrinho">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    height="48px"
+                    viewBox="0 -960 960 960"
+                    width="48px"
+                    fill="#F3F3F3">
+                    <path d="M236-102.21q-21-21.21-21-51T236.21-204q21.21-21 51-21T338-203.79q21 21.21 21 51T337.79-102q-21.21 21-51 21T236-102.21Zm400 0q-21-21-21-51T636.21-204q21-21 51-21T738-203.79q21 21.21 21 51T737.79-102q-21.21-21-51-21T636-102.21ZM235-741l110 228h288l125-228H235Zm-30-60h589.07q22.97 0 34.95 21 11.98 21-.02 42L694-495q-11 19-28.56 30.5T627-453H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Zm140 288h288-288Z"/>
+                </svg>
+                <span id="contador-carrinho">0</span>
+            </button>
 
     <!-- CONTADOR DO CARRINHO -->
     <span id="contador-carrinho">0</span>
@@ -87,7 +83,7 @@
                     alt="Conjunto Elegance">
 
                 <h3>Conjunto Elegance</h3>
-                <a href="../Pages/produto01.html">Ver detalhes</a>
+                <a href="../pages/produto01.html">Ver detalhes</a>
 
             </article>
 
@@ -99,7 +95,7 @@
                     alt="Conjunto Romance">
 
                 <h3>Conjunto Romance</h3>
-                <a href="../Pages/produto02.html">Ver detalhes</a>
+                <a href="../pages/produto02.html">Ver detalhes</a>
 
             </article>
 
@@ -111,7 +107,7 @@
                     alt="Sutiã Bella">
 
                 <h3>Sutiã Bella</h3>                
-                <a href="../Pages/produto03.html">Ver detalhes</a>
+                <a href="../pages/produto03.html">Ver detalhes</a>
 
             </article>
 
@@ -123,7 +119,7 @@
                 alt="Conjunto de lingerie preto">
 
                 <h3>Conjunto Black</h3>             
-                <a href="../Pages/produto04.html">
+                <a href="../pages/produto04.html">
                 Ver detalhes
                 </a>
 
@@ -139,6 +135,10 @@
         <p>Delicadeza para todos os momentos.</p>
     </footer>
 
+    <audio id ="meuAudio" controls>
+        <source src="../assets/Ai, que delicia! Que demais! MEME DOWNLOAD.mp3" type="audio/mp3">
+    </audio>
+    
 </body>
 
 </html>

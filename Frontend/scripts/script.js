@@ -10,7 +10,7 @@ titulo.addEventListener("click", function() {
 });
 
 //querySelectorAll
-const linkContato = document.querySelector('a[href="../Pages/contato.html"]');
+const linkContato = document.querySelector('a[href="../pages/contato.html"]');
 
 const modal = document.querySelector("#modal-confirmacao");
 const btnConfirmar = document.querySelector("#btn-confirmar");
@@ -28,7 +28,7 @@ linkContato.addEventListener("click", function(event) {
 btnConfirmar.addEventListener("click", function() {
 
     // Vai para a página de contato
-    window.location.href = "../Pages/contato.html";
+    window.location.href = "../pages/contato.html";
 
 });
 
@@ -39,55 +39,31 @@ btnCancelar.addEventListener("click", function() {
 
 });
 
-//CONTADOR DO CARRINHO
+// CONTADOR DO CARRINHO
 
-// Seleciona o botão do carrinho
-const carrinho = document.getElementById("carrinho");
+    // Seleciona o carrinho
+    const carrinho = document.getElementById("carrinho");
+    console.log(carrinho);
+    // Seleciona o contador
+    const contadorCarrinho = document.getElementById("contador-carrinho");
+    console.log(contadorCarrinho);
+    // Começa em zero
+    let quantidadeProdutos = 0;
 
-// Seleciona o contador
-const contadorCarrinho = document.getElementById("contador-carrinho");
+        // Quando clicar no carrinho
+    carrinho.addEventListener("click", function (event) {
 
-// Começa a quantidade em zero
-let quantidadeProdutos = 0;
+        // Impede o link de mudar de página
+        event.preventDefault();
 
-// Quando clicar no carrinho
-carrinho.addEventListener("click", function(event) {
+        // Aumenta 1
+        quantidadeProdutos++;
 
-    // Impede o comportamento padrão do link
-    event.preventDefault();
+        // Mostra a quantidade
+        contadorCarrinho.textContent = quantidadeProdutos;
 
-    // Aumenta a quantidade em 1
-    quantidadeProdutos++;
-
-    // Atualiza o número mostrado na tela
-    contadorCarrinho.textContent = quantidadeProdutos;
-
-});
+    });
 
 
 
-// BOTÃO DE ENVIAR MENSAGEM
-
-// Seleciona o formulário pelo ID
-const formulario = document.getElementById("formulario");
-
-// Seleciona a mensagem de sucesso pelo ID
-const mensagemSucesso = document.getElementById("mensagem-sucesso");
-
-// Detecta quando o formulário for enviado
-formulario.addEventListener("submit", function(event) {
-
-    // Impede que a página seja recarregada
-    event.preventDefault();
-
-    // Mostra a mensagem de sucesso
-    mensagemSucesso.textContent = "Mensagem enviada com sucesso!";
-
-    // Exibe a mensagem na tela
-    mensagemSucesso.style.display = "block";
-
-    // Limpa os campos do formulário
-    formulario.reset();
-
-});
 

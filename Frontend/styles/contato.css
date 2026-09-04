@@ -321,3 +321,22 @@ form button:hover {
         font-size: 16px;
     }
 }
+/* =========================================================
+   MENSAGEM DE SUCESSO
+========================================================= */
+
+#mensagem-sucesso {
+    display: none; /* Esconde a mensagem inicialmente */
+    margin-top: 10px;
+    padding: 40vh; /* Espaçamento interno proporcional */
+    min-height: 100px; /* Altura mínima */
+    
+    background-image: url("../assets/Copilot_20260903_190332.png");
+    background-size: contain; /* Mantém proporção da imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+    border: 1px solid #c3e6cb;
+    border-radius: 10px;
+}
